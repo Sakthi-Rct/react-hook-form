@@ -7,35 +7,77 @@ body {
 }
 
 .errorMsg {
-  max-width: 350px;
   color: #f21e08;
-  padding: 2px 0;
-  margin-top: 2px;
-  font-size: 14px;
+  padding: 0;
+  margin: 5px 0 0;
+  font-size: 13px;
   font-weight: 300;
 }
 
 .form-control {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .form-control label {
-  width: 20%;
   padding-right: 20px;
   margin-bottom: 5px;
+  font-size: 14px;
 }
 
 .form-control input[type="text"],
 .form-control input[type="password"] {
-  width: 40%;
-  padding: 5px;
+  padding: 16px 15px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 1px solid #dfdfe8;
+  box-shadow: 1px 1px 5px 0px #f3f3f3;
+  outline: none;
+}
+
+.form-control input[type="text"]:valid,
+.form-control input[type="password"]:valid {
+  border: 1px solid #5f30e2;
+  background: #f5f1ff;
+}
+
+.form-control input[type="text"]:invalid,
+.form-control input[type="password"]:invalid {
+  border: 1px solid #dc3544;
+  background: #f5f1ff;
 }
 
 button {
-  max-width: 150px;
-  padding: 5px 10px;
+  padding: 18px 10px;
+  background: #5f30e2;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 160px;
+  cursor: pointer;
+}
+
+.app {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+form {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.button-wrap {
+  align-items: flex-end;
 }
 
 @media screen and (max-width: 600px) {
