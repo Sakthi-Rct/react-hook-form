@@ -24,6 +24,7 @@ export default function App() {
   return (
     <div className="app">
       <form onSubmit={handleSubmit(onSubmit)}>
+        <h1>Form with react-hook-form library</h1>
         <div className="form-control">
           <label>Email :</label>
           <input
